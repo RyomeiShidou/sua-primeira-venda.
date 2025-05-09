@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renda Extra Nível Esperto</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ccc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #0a0, #40f, #000);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      color: white;
+    }
+    .content {
+      padding: 20px;
+    }
+    .video-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 90%;
+      height: 315px;
+      border: none;
+    }
+    .product {
+      background-color: #111;
+      border: 1px solid #444;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    .price-button {
+      background-color: #4b0082;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .qr-container {
+      margin-top: 10px;
+    }
+    .timer {
+      font-size: 1.5rem;
+      color: #0f0;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Renda Extra Nível Esperto</h1>
+  </header>
+
+  <div class="content">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/HfI64_8MuY8" allowfullscreen></iframe>
+    </div>
+
+    <p>Aprenda a ganhar dinheiro de forma inteligente com a Kiwify! Neste curso, você vai entender:
+      <ul>
+        <li>Como criar e vender produtos digitais</li>
+        <li>Como divulgar suas páginas e converter mais vendas</li>
+        <li>Estratégias práticas para começar com baixo investimento</li>
+      </ul>
+    </p>
+
+    <!-- Produtos -->
+    <div class="product"><p>Produto - <strong>R$ 2</strong></p><button class="price-button" onclick="generateQR('2')">Comprar via Pix</button><div class="qr-container" id="qr-2"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 20</strong></p><button class="price-button" onclick="generateQR('20')">Comprar via Pix</button><div class="qr-container" id="qr-20"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 40</strong></p><button class="price-button" onclick="generateQR('40')">Comprar via Pix</button><div class="qr-container" id="qr-40"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 80</strong></p><button class="price-button" onclick="generateQR('80')">Comprar via Pix</button><div class="qr-container" id="qr-80"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 100</strong></p><button class="price-button" onclick="generateQR('100')">Comprar via Pix</button><div class="qr-container" id="qr-100"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 140</strong></p><button class="price-button" onclick="generateQR('140')">Comprar via Pix</button><div class="qr-container" id="qr-140"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 200</strong></p><button class="price-button" onclick="generateQR('200')">Comprar via Pix</button><div class="qr-container" id="qr-200"></div></div>
+    <div class="product"><p>Produto - <strong>R$ 300</strong></p><button class="price-button" onclick="generateQR('300')">Comprar via Pix</button><div class="qr-container" id="qr-300"></div></div>
+
+    <div class="timer" id="countdown">Tempo restante: 10:00</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <
